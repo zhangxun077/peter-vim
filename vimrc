@@ -1,3 +1,9 @@
+""""""""""""""""""""""""""""""""""""""""
+"
+"             fuzzfinder
+"
+""""""""""""""""""""""""""""""""""""""""
+map ,,  :FufCoverageFile!<cr>
 
 """"""""""""""""""""""""""""""""""""""""
 "
@@ -5,8 +11,6 @@
 "
 """"""""""""""""""""""""""""""""""""""""
 syntax on
-set hlsearch
-colorscheme ir_black
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General Abbrevs
@@ -29,7 +33,6 @@ map ,cp :cp<cr>
 "
 """"""""""""""""""""""""""""""""""""""""
 map ,pp :setlocal paste!<cr>
-set autoindent
 
 """"""""""""""""""""""""""""""
 "
@@ -139,7 +142,7 @@ set fo=croq
 "             taglist
 "
 """"""""""""""""""""""""""""""""""""""""
-"map ,t :Tlist<CR>
+map ,t :Tlist<CR>
 
 """"""""""""""""""""""""""""""""""""""""
 "
@@ -152,10 +155,10 @@ let g:load_doxygen_syntax=1
 
 """"""""""""""""""""""""""""""""""""""""
 "
-"             QT-doc
+"            Ack 
 "
 """"""""""""""""""""""""""""""""""""""""
-map ,k :!qref <cword><ENTER>
+map ,k :Ack <cword><ENTER>
 
 """"""""""""""""""""""""""""""""""""""""
 "
@@ -171,7 +174,7 @@ map ,n :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""""""""""""
 " before I use <S-ZZ> to quit, this has the danger of unexpectedly
 " save some garbage editing, so I have a safer way now as below
-map ,, :q<CR>
+"map ,, :q<CR>
 " force quit
 map ,f :q!<CR>
 
