@@ -14,6 +14,9 @@ set isk+=-
 "
 """"""""""""""""""""""""""""""""""""""""
 map ,,  :FufCoverageFile!<cr>
+let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|(tmp|log|db/migrate|vendor)'
+let g:fuf_enumeratingLimit = 500
+let g:fuf_coveragefile_prompt = '=>'
 
 """"""""""""""""""""""""""""""""""""""""
 "
@@ -147,13 +150,6 @@ map ,t :Tlist<CR>
 " highlight the doxygen comments
 " used with DoxygenToolkit.vim
 let g:load_doxygen_syntax=1
-
-""""""""""""""""""""""""""""""""""""""""
-"
-"            Ack 
-"
-""""""""""""""""""""""""""""""""""""""""
-map ,k :Ack <cword><ENTER>
 
 """"""""""""""""""""""""""""""""""""""""
 "
