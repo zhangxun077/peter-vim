@@ -195,7 +195,6 @@ autocmd! bufwritepost vimrc source ~/.vim/vimrc
 """"""""""""""""""""""""""""""""""""""""
 " set quick escape from insert mode, and now I can go without arrow keys and
 " use j and k to move around in insert mode
-imap JJ <esc>
 imap jj <esc>
 
 """"""""""""""""""""""""""""""""""""""""
