@@ -284,3 +284,4 @@ nmap <silent> ,md :!mkdir -p %:p:h<CR>
 """"""""""""""""""""""""""""""""""""""""
 nnoremap <c-e> ,
 vnoremap <c-e> ,
+inoremap ( ()<Esc>i
