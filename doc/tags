@@ -44,10 +44,8 @@
 'Tlist_WinWidth'	taglist.txt	/*'Tlist_WinWidth'*
 'loaded_nerd_tree'	NERD_tree.txt	/*'loaded_nerd_tree'*
 'snippets'	snipMate.txt	/*'snippets'*
-.	rails.txt	/*.*
 .snippet	snipMate.txt	/*.snippet*
 .snippets	snipMate.txt	/*.snippets*
-/	rails.txt	/*\/*
 :Ack	ack.txt	/*:Ack*
 :AckAdd	ack.txt	/*:AckAdd*
 :CVSEdit	vcscommand.txt	/*:CVSEdit*
@@ -263,7 +261,6 @@ b:match_tail	matchit.txt	/*b:match_tail*
 b:match_wholeBR	matchit.txt	/*b:match_wholeBR*
 b:match_word	matchit.txt	/*b:match_word*
 b:match_words	matchit.txt	/*b:match_words*
-c	fuf.txt	/*c*
 config/rails.vim	rails.txt	/*config\/rails.vim*
 cvscommand-changes	vcscommand.txt	/*cvscommand-changes*
 drawit	DrawIt.txt	/*drawit*
@@ -293,9 +290,7 @@ drawit-stop	DrawIt.txt	/*drawit-stop*
 drawit-usage	DrawIt.txt	/*drawit-usage*
 drawit-visblock	DrawIt.txt	/*drawit-visblock*
 drawit.txt	DrawIt.txt	/*drawit.txt*
-e	fuf.txt	/*e*
 etckeeper	peter.txt	/*etckeeper*
-file	fuf.txt	/*file*
 fuf	fuf.txt	/*fuf*
 fuf#setOneTimeVariables()	fuf.txt	/*fuf#setOneTimeVariables()*
 fuf-abbreviation	fuf.txt	/*fuf-abbreviation*
@@ -628,7 +623,6 @@ rails-template-types	rails.txt	/*rails-template-types*
 rails-type-navigation	rails.txt	/*rails-type-navigation*
 rails-vim-integration	rails.txt	/*rails-vim-integration*
 rails.txt	rails.txt	/*rails.txt*
-s	fuf.txt	/*s*
 snipMate	snipMate.txt	/*snipMate*
 snipMate-$#	snipMate.txt	/*snipMate-$#*
 snipMate-${#:}	snipMate.txt	/*snipMate-${#:}*
