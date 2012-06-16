@@ -10,7 +10,6 @@ call pathogen#infect()
 "             ack
 "
 """"""""""""""""""""""""""""""""""""""""
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 map ,k :Ack <cword><ENTER>
 
 
@@ -21,9 +20,20 @@ set isk+=-
 "
 """"""""""""""""""""""""""""""""""""""""
 map ,,  :FufCoverageFile!<cr>
-let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|(tmp|log|db/migrate|vendor)'
+" exclude is very dangerous, cause once you exclude sth, you can not add it in
+" FufAddPath(), 
+" for example if I exclude "tmp" here, I can not add anything with "tmp" as
+" its path, like "hello.tmp/", "/home/peter/tmp/**/*"
+" better to use g:fuf_coveragefile_globPatterns
+let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|(tmp|log|db/migrate)'
 let g:fuf_enumeratingLimit = 500
 let g:fuf_coveragefile_prompt = '=>'
+
+function! FufAddPath(newpath)
+  call fuf#setOneTimeVariables(['g:fuf_coveragefile_globPatterns', g:fuf_coveragefile_globPatterns + [a:newpath]])
+endfunction
+" e.g :call FufAddPath('/home/peter/xxx/ideas/**/*')
+  
 
 """"""""""""""""""""""""""""""""""""""""
 "
@@ -112,6 +122,9 @@ function! Browser ()
   exec "!firefox ".line
 endfunction
 map ,w :call Browser ()<CR>
+
+
+
 
 
 """"""""""""""""""""""""""""""""""""""""
@@ -299,3 +312,4 @@ vnoremap <c-e> ,
 """"""""""""""""""""""""""""""""""""""""
 nnoremap ,ft Vatzf
 " use aesthetic middle of screen for "zz"
+
