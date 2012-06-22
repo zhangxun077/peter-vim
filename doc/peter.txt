@@ -1,3 +1,5 @@
+# Nerdcommenter is better than comment.vim
+command.vim doesnot even support .vimrc .html
 ## *peter-vimrc-candidates*
 " Map space to / (search) and c-space to ? (backgwards search)
 map <space> /

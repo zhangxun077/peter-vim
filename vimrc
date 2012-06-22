@@ -61,7 +61,8 @@ map ,cp :cp<cr>
 "             paste
 "
 """"""""""""""""""""""""""""""""""""""""
-map ,pp :setlocal paste!<cr>
+" need ,pp to toggle paste 
+imap ,pp :setlocal paste!<cr>
 
 """"""""""""""""""""""""""""""
 "
@@ -310,7 +311,8 @@ vnoremap <c-e> ,
 "             html
 "
 """"""""""""""""""""""""""""""""""""""""
-nnoremap ,ft Vatzf
+" this makes my force quit `,f` very slow
+"nnoremap ,ft Vatzf
 " use aesthetic middle of screen for "zz"
 
 """"""""""""""""""""""""""""""""""""""""
