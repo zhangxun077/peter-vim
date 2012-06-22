@@ -12,7 +12,6 @@ call pathogen#infect()
 """"""""""""""""""""""""""""""""""""""""
 map ,k :Ack <cword><ENTER>
 
-
 set isk+=-
 """"""""""""""""""""""""""""""""""""""""
 "
@@ -86,6 +85,7 @@ map ,ss :setlocal spell!<cr>
 "
 """"""""""""""""""""""""""""""""""""""""
 " Enable filetype plugin
+" for i_Ctrl-X_Ctrl-O
 filetype plugin on
 
 """"""""""""""""""""""""""""""""""""""""
@@ -312,4 +312,50 @@ vnoremap <c-e> ,
 """"""""""""""""""""""""""""""""""""""""
 nnoremap ,ft Vatzf
 " use aesthetic middle of screen for "zz"
+
+""""""""""""""""""""""""""""""""""""""""
+"
+"             zencoding
+"
+""""""""""""""""""""""""""""""""""""""""
+  let g:user_zen_settings = {
+  \  'lang' : 'ja',
+  \  'html' : {
+  \    'filters' : 'html',
+  \    'indentation' : ' '
+  \  },
+  \  'perl' : {
+  \    'indentation' : '  ',
+  \    'aliases' : {
+  \      'req' : "require '|'"
+  \    },
+  \    'snippets' : {
+  \      'use' : "use strict\nuse warnings\n\n",
+  \      'w' : "warn \"${cursor}\";",
+  \    },
+  \  },
+  \  'php' : {
+  \    'extends' : 'html',
+  \    'filters' : 'html,c',
+  \  },
+  \  'css' : {
+  \    'filters' : 'fc',
+  \  },
+  \  'javascript' : {
+  \    'snippets' : {
+  \      'jq' : "$(function() {\n\t${cursor}${child}\n});",
+  \      'jq:each' : "$.each(arr, function(index, item)\n\t${child}\n});",
+  \      'fn' : "(function() {\n\t${cursor}\n})();",
+  \      'tm' : "setTimeout(function() {\n\t${cursor}\n}, 100);",
+  \    },
+  \  },
+  \ 'java' : {
+  \  'indentation' : '    ',
+  \  'snippets' : {
+  \   'main': "public static void main(String[] args) {\n\t|\n}",
+  \   'println': "System.out.println(\"|\");",
+  \   'class': "public class | {\n}\n",
+  \  },
+  \ },
+  \}
 
