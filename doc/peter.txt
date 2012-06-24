@@ -8,7 +8,7 @@ map <silent> <leader><cr> :noh<cr>
 
 " I can map <right> <light> to sth useful
 
-## *peter-note*
+*PETERNOTE*
  
 
 some people use *etckeeper* to trace the chnages in /etc/, so that inspired me

@@ -24,7 +24,7 @@ map ,,  :FufCoverageFile!<cr>
 " for example if I exclude "tmp" here, I can not add anything with "tmp" as
 " its path, like "hello.tmp/", "/home/peter/tmp/**/*"
 " better to use g:fuf_coveragefile_globPatterns
-let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|(tmp|log|db/migrate)'
+let g:fuf_coveragefile_exclude = '\v\~$|\.(o|exe|dll|bak|orig|swp)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|(tmp|db/migrate)'
 let g:fuf_enumeratingLimit = 500
 let g:fuf_coveragefile_prompt = '=>'
 
@@ -62,6 +62,7 @@ map ,cp :cp<cr>
 "
 """"""""""""""""""""""""""""""""""""""""
 " need ,pp to toggle paste 
+" or set it to `nocindent`
 imap ,pp :setlocal paste!<cr>
 
 """"""""""""""""""""""""""""""
@@ -133,13 +134,9 @@ map ,w :call Browser ()<CR>
 "             buffers
 "
 """"""""""""""""""""""""""""""""""""""""
-" in order to switch between buffers
-" with unsaved change 
-set hidden
-" I just use <Tab> to do buffernext, but need to make sure I am in Normal Mode
-" Taglist.vim use <Tab> in nomal mode for jumping among different filename in 
-" its own window, but I do not feel uncomfortable about this 
-map <Tab> :bn<CR>
+set hidden "in order to switch between buffers with unsaved change 
+map <s-tab> :bp<cr>
+map <tab> :bn<cr>
 map ,bd :bd<cr>
 """"""""""""""""""""""""""""""""""""""""
 "

@@ -201,6 +201,7 @@ NERDTreeOptionSummary	NERD_tree.txt	/*NERDTreeOptionSummary*
 NERDTreeOptions	NERD_tree.txt	/*NERDTreeOptions*
 NERDTreeRender()	NERD_tree.txt	/*NERDTreeRender()*
 NERD_tree.txt	NERD_tree.txt	/*NERD_tree.txt*
+PETERNOTE	peter.txt	/*PETERNOTE*
 ResetSnippets()	snipMate.txt	/*ResetSnippets()*
 Tlist_Get_Tag_Prototype_By_Line()	taglist.txt	/*Tlist_Get_Tag_Prototype_By_Line()*
 Tlist_Get_Tagname_By_Line()	taglist.txt	/*Tlist_Get_Tagname_By_Line()*
@@ -483,7 +484,6 @@ o_[%	matchit.txt	/*o_[%*
 o_]%	matchit.txt	/*o_]%*
 o_g%	matchit.txt	/*o_g%*
 peter-edit-help	peter.txt	/*peter-edit-help*
-peter-note	peter.txt	/*peter-note*
 peter-vimrc-candidates	peter.txt	/*peter-vimrc-candidates*
 rails	rails.txt	/*rails*
 rails-'cfu'	rails.txt	/*rails-'cfu'*
