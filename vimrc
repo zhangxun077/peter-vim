@@ -61,9 +61,11 @@ map ,cp :cp<cr>
 "             paste
 "
 """"""""""""""""""""""""""""""""""""""""
-" need ,pp to toggle paste 
-" or set it to `nocindent`
-imap ,pp :setlocal paste!<cr>
+" for insert mode
+set pastetoggle=<f2>
+
+
+
 
 """"""""""""""""""""""""""""""
 "
