@@ -7,8 +7,7 @@
 
         mv peter-vim ~/.vim
 
-1. set up ~/.vimrc
-   you need to have a fake .vimrc in your $HOME
+1. set up `~/.vimrc`, have a fake `.vimrc` in your `$HOME`
 
         ln -s ~/vim /vimrc .vimrc
 
