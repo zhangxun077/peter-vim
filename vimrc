@@ -120,12 +120,12 @@ autocmd BufWritePost ~/.vim/doc/* :helptags ~/.vim/doc
 """"""""""""""""""""""""""""""""""""""""
 " NOW Browser() only works for lines containing nothing but the link
 " refer to http://vim.wikia.com/wiki/VimTip306 
-function! Browser ()
-  let line = getline (".")
+function! Browser()
+  let line = getline(".")
 "  let line = matchstr (line, "\%(http://\|www\.\)[^ ,;\t]*")
   exec "!firefox ".line
 endfunction
-map ,w :call Browser ()<CR>
+map ,w :call Browser()<CR>
 
 
 
